@@ -77,7 +77,7 @@ fn main() {
     let (s2, len) = calculate_length(s1);    
 
     println!("The length of '{s2}' is {len}");
-    println!("s1={s1}");
+    // println!("s1={s1}"); won't work because s1 has been moved into s2
 }
 
 fn calculate_length(s: String) -> (String, usize) {
